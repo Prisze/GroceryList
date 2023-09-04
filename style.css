@@ -85,5 +85,5 @@ body {
   .groceryItem:hover {
     background-color: var(--purplish);
     color: var(--yellowish)
-    font-weight: bold;
+
   }

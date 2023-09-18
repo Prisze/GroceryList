@@ -2,15 +2,12 @@ import { LocalDB } from 'https://cdn.skypack.dev/peadb'
 import shortid from 'https://cdn.skypack.dev/shortid'
 import confetti from 'https://cdn.skypack.dev/canvas-confetti'
 
-
 const db = new LocalDB('grocery-list-db')
 const groceries = db.getAll() || []
-
 
 const groceryList = document.getElementById('groceryList')
 const newGroceryInput = document.getElementById('newGrocery')
 const addBtn = document.getElementById('addBtn')
-
 
 const createGroceryElement = grocery => {
     const groceryElement = document.createElement('li')
@@ -23,7 +20,6 @@ const createGroceryElement = grocery => {
     })
     return groceryElement
   }
-
 
   const addGrocery = newGrocery => {
     groceryList.appendChild(createGroceryElement(newGrocery))
@@ -38,6 +34,5 @@ const createGroceryElement = grocery => {
       db.set(key, value)
       newGroceryInput.value = null
     }})
-
 
     groceries.map(grocery => addGrocery(grocery))

@@ -1,14 +1,15 @@
 :root {
-    --background: #acb6df;
+    --background: #b3c2ff;
     --foreground: #15257a;
-    --comment: #676e95;
-    --accent: #9e5cdb;
+    --comment: #ffafaf;
+    --accent: #54ffbd;
     --redish: #ff9393;
     --orangish: #ffd8a4;
-    --yellowish: #f5ff97;
+    --yellowish: #eff5be;
     --greenish: #c3e88d;
     --bluish: #82aaff;
     --purplish: #594dff;
+    --other: #676e95;
   }
   
 
